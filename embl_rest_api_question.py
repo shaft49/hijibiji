@@ -24,7 +24,6 @@ def  getCountries(s, p):
             if data['population'] > p:
                 num_of_countries += 1
         page += 1
-    print(num_of_countries)
     return num_of_countries
 # f = open(os.environ['OUTPUT_PATH'], 'w')
     

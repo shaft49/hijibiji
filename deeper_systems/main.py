@@ -26,9 +26,9 @@ def main():
         watcher[w] = sorted(watcher[w], key=lambda x: x[1])
         watcher[w] = [p for (p, _) in watcher[w]]
 
-    with open('manager.json', 'w') as fout:
+    with open('managers.json', 'w') as fout:
         json.dump(managers, fout, indent=4)
-    with open('watcher.json', 'w') as fout:
+    with open('watchers.json', 'w') as fout:
         json.dump(watcher, fout, indent=4)
 
 
